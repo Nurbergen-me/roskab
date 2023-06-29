@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <div class="nav">
@@ -59,80 +60,99 @@
             </div>
         </div>
     </div>
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header_wrap">
-                <div class="header_top">
-                    <img src="img/logo.png" alt="logo" class="header_logo">
-                    <div class="header_slogan">
-                        <span>
-                            «Наша цель – кабель ГОСТ
-                        </span>
-                        <span>
-                            на объекте клиента точно в срок»
-                        </span>
-                    </div>
-                    <div class="header_search">
-                        <input type="text" placeholder="Поиск по товарам ...">
-                        <button class="header_search_btn">
-                            НАЙТИ
-                        </button>
-                    </div>
-                    <div class="header_mail">
-                        <div class="header_mail_info">
-                            direct@roskab.ru
+    <header class="header header-main" id="header">
+        <div class="header_nav">
+            <div class="container">
+                <div class="header_wrap">
+                    <div class="header_top">
+                        <img src="img/logo.png" alt="logo" class="header_logo">
+                        <div class="header_slogan">
                             <span>
-                                Для заявок по почте
+                                «Наша цель – кабель ГОСТ
+                            </span>
+                            <span>
+                                на объекте клиента точно в срок»
                             </span>
                         </div>
+                        <div class="header_search">
+                            <input type="text" placeholder="Поиск по товарам ...">
+                            <button class="header_search_btn">
+                                <img src="img/search-icon.svg" alt="search">
+                                НАЙТИ
+                            </button>
+                        </div>
+                        <div class="header_mail">
+                            <img src="img/mail-icon.png" alt="mail">
+                            <div class="header_mail_info">
+                                direct@roskab.ru
+                                <span>
+                                    Для заявок по почте
+                                </span>
+                            </div>
+                        </div>
+                        <div class="header_phones">
+                            <a href="#" class="header_phone">
+                                +7 846 264-14-41
+                            </a>
+                            <a href="#" class="header_phone">
+                                +7 846 264-13-31
+                            </a>
+                        </div>
+                        <div class="header_top_btn btn">
+                            ЗАКАЗАТЬ ЗВОНОК
+                        </div>
+                        <div class="header_top_mobile">
+                            <div class="header_top_mobile_item">
+                                <img src="img/search-icon.svg" alt="search">
+                            </div>
+                            <div class="header_top_mobile_item">
+                                <img src="img/search-icon.svg" alt="search">
+                            </div>
+                            <div class="header_top_mobile_burger burger">
+                                <div class="burger_item"></div>
+                                <div class="burger_item"></div>
+                                <div class="burger_item"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="header_phones">
-                        <a href="#" class="header_phone">
-                            +7 846 264-14-41
+                    <div class="header_menu">
+                        <a href="#" class="header_menu_item">
+                            Кабели силовые с ПВХ изоляцией
                         </a>
-                        <a href="#" class="header_phone">
-                            +7 846 264-13-31
+                        <span class="header_menu_line"></span>
+                        <a href="#" class="header_menu_item">
+                            Кабели контрольные  
+                        </a>
+                        <span class="header_menu_line"></span>
+                        <a href="#" class="header_menu_item">
+                            Кабели и провода силовые гибкие до 1 кВ
+                        </a>
+                        <span class="header_menu_line"></span>
+                        <a href="#" class="header_menu_item">
+                            Кабель В наличии
+                        </a>
+                        <span class="header_menu_line"></span>
+                        <a href="#" class="header_menu_item">
+                            Кабель В наличии
+                        </a>
+                        <span class="header_menu_line"></span>
+                        <a href="#" class="header_menu_item">
+                            Ещё...
                         </a>
                     </div>
-                    <div class="header_top_btn btn">
-                        ЗАКАЗАТЬ ЗВОНОК
-                    </div>
                 </div>
-                <div class="header_menu">
-                    <a href="#" class="header_menu_item">
-                        Кабели силовые с ПВХ изоляцией
-                    </a>
-                    <span class="header_menu_line"></span>
-                    <a href="#" class="header_menu_item">
-                        Кабели контрольные  
-                    </a>
-                    <span class="header_menu_line"></span>
-                    <a href="#" class="header_menu_item">
-                        Кабели и провода силовые гибкие до 1 кВ
-                    </a>
-                    <span class="header_menu_line"></span>
-                    <a href="#" class="header_menu_item">
-                        Кабель В наличии
-                    </a>
-                    <span class="header_menu_line"></span>
-                    <a href="#" class="header_menu_item">
-                        Кабель В наличии
-                    </a>
-                    <span class="header_menu_line"></span>
-                    <a href="#" class="header_menu_item">
-                        Ещё...
-                    </a>
-                </div>
-                <div class="header_offer">
-                    <h1 class="header_title">
-                        Поставки кабеля <br>
-                        <span class="space"></span>и кабельной продукции <br>
-                        по <div class="underline">лучшей цене!</div> 
-                    </h1>
-                    <button class="btn header_btn">
-                        ПЕРЕЙТИ В  КАТАЛОГ
-                    </button>
-                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header_offer">
+                <h1 class="header_title">
+                    Поставки кабеля <br>
+                    <span class="space"></span>и кабельной продукции <br>
+                    по <div class="underline">лучшей цене!</div> 
+                </h1>
+                <button class="btn header_btn">
+                    ПЕРЕЙТИ В  КАТАЛОГ
+                </button>
             </div>
         </div>
     </header>
@@ -141,66 +161,66 @@
             <div class="pros_wrap">
                 <div class="pros_item">
                     <div class="pros_item_icon">
-
+                        <img src="img/pros-icon.svg" alt="pros icon">
                     </div>
                     <div class="pros_item_info">
                         <h4 class="pros_item_name">
                             1999 - 2023 г.
                         </h4>
                         <div class="pros_item_text">
-                            24 года поставляем кабель
+                            24 года поставляем <br> кабель
                         </div>
                     </div>
                 </div>
                 <div class="pros_item">
                     <div class="pros_item_icon">
-
+                        <img src="img/pros-icon.svg" alt="pros icon">
                     </div>
                     <div class="pros_item_info">
                         <h4 class="pros_item_name">
                             Документы
                         </h4>
                         <div class="pros_item_text">
-                            полный пакет документов и сертификатов
+                            полный пакет документов <br> и сертификатов
                         </div>
                     </div>
                 </div>
                 <div class="pros_item">
                     <div class="pros_item_icon">
-
+                        <img src="img/pros-icon.svg" alt="pros icon">
                     </div>
                     <div class="pros_item_info">
                         <h4 class="pros_item_name">
                             ГОСТ / ТУ 315
                         </h4>
                         <div class="pros_item_text">
-                            Богатый ассортиментпродукции ТУ 315
+                            Богатый ассортимент <br> продукции ТУ 315
                         </div>
                     </div>
                 </div>
                 <div class="pros_item">
                     <div class="pros_item_icon">
-
+                        <img src="img/pros-icon.svg" alt="pros icon">
                     </div>
                     <div class="pros_item_info">
                         <h4 class="pros_item_name">
                             2000 км2 +
                         </h4>
                         <div class="pros_item_text">
-                            В наличии более 2000 км2 кабеля
+                            В наличии более  <br> 2000 км2 кабеля
                         </div>
                     </div>
                 </div>
                 <div class="pros_item">
                     <div class="pros_item_icon">
-
+                        <img src="img/pros-icon.svg" alt="pros icon">
                     </div>
                     <div class="pros_item_info">
                         <h4 class="pros_item_name">
                             1000 +
                         </h4>
                         <div class="pros_item_text">
-                            Более одной тысячи довольных клиентов в стране
+                            Более одной тысячи <br> довольных клиентов в стране
                         </div>
                     </div>
                 </div>
@@ -376,7 +396,110 @@
                         Заказать кабель
                     </button>
                 </a>
+                <a href="#" class="products_product product">
+                    <span class="product_sale">
+                        А К Ц И Я
+                    </span>
+                    <div class="product_img">
+
+                    </div>
+                    <div class="product_category">
+                        Кабели силовые
+                    </div>
+                    <h5 class="product_name">
+                        Кабель NYM-0,3ТУ 16.К09-131-2004силовой три строки
+                    </h5>
+                    <div class="product_info">
+                        <div class="product_status">
+                            В наличии
+                        </div>
+                        <div class="product_code">
+                            Арт. 3477789
+                        </div>
+                    </div>
+                    <button class="product_btn btn btn-secondary">
+                        Заказать кабель
+                    </button>
+                </a>
+                <a href="#" class="products_product product">
+                    <span class="product_sale">
+                        А К Ц И Я
+                    </span>
+                    <div class="product_img">
+
+                    </div>
+                    <div class="product_category">
+                        Кабели силовые
+                    </div>
+                    <h5 class="product_name">
+                        Кабель NYM-0,3ТУ 16.К09-131-2004силовой три строки
+                    </h5>
+                    <div class="product_info">
+                        <div class="product_status">
+                            В наличии
+                        </div>
+                        <div class="product_code">
+                            Арт. 3477789
+                        </div>
+                    </div>
+                    <button class="product_btn btn btn-secondary">
+                        Заказать кабель
+                    </button>
+                </a>
+                <a href="#" class="products_product product">
+                    <span class="product_sale">
+                        А К Ц И Я
+                    </span>
+                    <div class="product_img">
+
+                    </div>
+                    <div class="product_category">
+                        Кабели силовые
+                    </div>
+                    <h5 class="product_name">
+                        Кабель NYM-0,3ТУ 16.К09-131-2004силовой три строки
+                    </h5>
+                    <div class="product_info">
+                        <div class="product_status">
+                            В наличии
+                        </div>
+                        <div class="product_code">
+                            Арт. 3477789
+                        </div>
+                    </div>
+                    <button class="product_btn btn btn-secondary">
+                        Заказать кабель
+                    </button>
+                </a>
+                <a href="#" class="products_product product">
+                    <span class="product_sale">
+                        А К Ц И Я
+                    </span>
+                    <div class="product_img">
+
+                    </div>
+                    <div class="product_category">
+                        Кабели силовые
+                    </div>
+                    <h5 class="product_name">
+                        Кабель NYM-0,3ТУ 16.К09-131-2004силовой три строки
+                    </h5>
+                    <div class="product_info">
+                        <div class="product_status">
+                            В наличии
+                        </div>
+                        <div class="product_code">
+                            Арт. 3477789
+                        </div>
+                    </div>
+                    <button class="product_btn btn btn-secondary">
+                        Заказать кабель
+                    </button>
+                </a>
             </div>
+            <button class="btn products_btn">
+                СМОТРЕТЬ ВЕСЬ КАБЕЛЬ 
+            </button>
         </div>
     </section>
     <section class="partners" id="partners">
@@ -437,6 +560,9 @@
                     </button>
                 </div>
             </div>
+            <button class="btn news_main-btn">
+                СМОТРЕТЬ ВСЕ НОВОСТИ
+            </button>
         </div>
     </section>
     <section class="locations" id="locations">
@@ -500,5 +626,226 @@
             </div>
         </div>
     </section>
+    <section class="questions" id="questions">
+        <div class="container">
+            <div class="questions_wrap">
+                <div class="questions_info">
+                    <h2 class="questions_title">
+                        Остались вопросы?
+                    </h2>
+                    <p class="questions_desc">
+                        Оставьте заявку на бесплатную консультацию, если у вас остались вопросыили позвоните по номеру: 
+                        <a href=" +78462641441"> +7 846 264-14-41</a> 
+                    </p>
+                </div>
+                <div class="questions_form">
+                    <div class="questions_input">
+                        <div class="questions_input_icon">
+
+                        </div>
+                        <select>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+                    </div>
+                    <div class="questions_input">
+                        <div class="questions_input_icon">
+
+                        </div>
+                        <input type="text" placeholder="Ваше имя *">
+                    </div>
+                    <div class="questions_input">
+                        <div class="questions_input_icon">
+
+                        </div>
+                        <input type="text" placeholder="+7">
+                    </div>
+                    <div class="questions_input">
+                        <div class="questions_input_icon">
+
+                        </div>
+                        <input type="text" placeholder="Ваш E-mail">
+                    </div>
+                    <button class="btn questions_btn">
+                        ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                    </button>
+                    <div class="questions_credits">
+                        Заполняя данную форму, вы даёте согласие на 
+                        <a href="#">обработку персональных данных</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer_logo-mobile">
+                <img src="img/logo-white.png" alt="footer logo">
+            </div>
+            <div class="footer_wrap">
+                <div class="footer_col footer_col_first">
+                    <div class="footer_logo">
+                        <img src="img/logo-white.png" alt="footer logo">
+                    </div>
+                    <div class="footer_text">
+                        Любые данные, предоставленные на нашем сайте, можем подтвердить документально из финансовой, управленческой и бухгалтерской отчётности
+                    </div>
+                    <div class="footer_text footer_company">
+                        Закрытое Акционерное Общество «РосКабельСвязь» (ЗАО «РосКабельСвязь»)ИНН / КПП: 6318152197 / 631801001
+                    </div>
+                </div>
+                <div class="footer_col footer_col_menu">
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                Компания         
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                Калькуляторы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                Новости
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                Склады
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                Для клиентов         
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                География поставок                 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_menu_item">
+                                Контакты        
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_col footer_col_catalog">
+                    <h5 class="footer_name">
+                        Каталог
+                    </h5>
+                    <div class="footer_catalog">
+                        <div class="footer_item">
+                            Кабели силовые с ПВХ изоляцией  
+                        </div>
+                        <div class="footer_item">
+                            Кабели контрольные   
+                        </div>
+                        <div class="footer_item">
+                            Кабели и провода силовые гибкие до 1 кВ  
+                        </div>
+                        <div class="footer_item">
+                            Кабель В наличии     
+                        </div>
+                        <div class="footer_item">
+                            Кабель В наличии
+                        </div>
+                        <div class="footer_item">
+                            Кабели силовые с ПВХ изоляцией      
+                        </div>
+                        <div class="footer_item">
+                            Кабели контрольные      
+                        </div>
+                        <div class="footer_item">
+                            Кабели и провода силовые гибкие до 1 кВ  
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_col footer_col_address">
+                    <h5 class="footer_name">
+                        Адреса
+                    </h5>
+                    <div class="footer_catalog">
+                        <div class="footer_item">
+                            Москва, Михайловский проезд, д.3с8.
+                        </div>
+                        <div class="footer_item">
+                            Санкт-Петербург, ул. Розенштейна, д. 38/5. 
+                        </div>
+                        <div class="footer_item">
+                            Краснодар, Межпутевая, д.53д 
+                        </div>
+                        <div class="footer_item">
+                            Екатеринбург, Елизаветинское шоссе, д.64  
+                        </div>
+                        <div class="footer_item">
+                            Красноярск, ул.Телевизорная, д. 1 стр. 9
+                        </div>
+                        <div class="footer_item">
+                            Усолье-Сибирское, (г.Иркутск) ул Малая, д.10      
+                        </div>
+                        <div class="footer_item">
+                            Чита, ул.Олимпийская, д.7/5    
+                        </div>
+                        <div class="footer_item">
+                            Хабаровск, Мельничный пер. д.10/4
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_col footer_col_contacts">
+                    <h5 class="footer_name">
+                        Контакты
+                    </h5>
+                    <div class="footer_links">
+                        <a href="#" class="footer_link">
+                            <img src="img/mail-icon.png" alt="mail">
+                            direc@roskab.ru
+                        </a>
+                        <a href="+78462641441" class="footer_link">
+                            <img src="img/mail-icon.png" alt="mail">
+                            +7 846 264-14-41
+                        </a>
+                        <a href="+78462641331" class="footer_link">
+                            <img src="img/mail-icon.png" alt="mail">
+                            +7 846 264-13-31
+                        </a>
+                    </div>
+                    <button class="btn footer_btn">
+                        ЗАКАЗАТЬ ЗВОНОК
+                    </button>
+                    <div class="footer_socials">
+                        <div class="footer_socials_title">
+                            Мы в соц. сетях:
+                        </div>
+                        <div class="footer_socials_wrap">
+                            <a href="#" class="footer_socials_item">
+                                <img src="img/mail-icon.png" alt="">
+                            </a>
+                            <a href="#" class="footer_socials_item">
+                                <img src="img/mail-icon.png" alt="">
+                            </a>
+                            <a href="#" class="footer_socials_item">
+                                <img src="img/mail-icon.png" alt="">
+                            </a>
+                            <a href="#" class="footer_socials_item">
+                                <img src="img/mail-icon.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_footer">
+                <div class="footer_footer_text">
+                    © 2012-2023 ЗАО «РосКабельСвязь» Все права защищены. Любое несогласованное копирование преследуется по закону.
+                </div>
+                <a href="#" class="footer_footer_text">
+                    Политика конфиденциальности
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

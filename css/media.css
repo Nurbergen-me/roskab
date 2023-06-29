@@ -1,0 +1,363 @@
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1140px;
+  }
+  .nav_menu {
+    gap: 20px;
+  }
+  .nav_menu_item {
+    font-size: 14px;
+  }
+  .header_logo {
+    width: 140px;
+  }
+  .header_search {
+    width: 280px;
+  }
+  .header_menu_item {
+    font-size: 14px;
+    height: 38px;
+  }
+  .header_top_btn {
+    width: 150px;
+  }
+  .pros_wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pros_item {
+    width: 30%;
+    margin-top: 20px;
+  }
+  .news_wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .products_wrap {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .footer_text {
+    max-width: 240px;
+  }
+  .footer_item {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .nav_menu {
+    gap: 12px;
+  }
+  .nav_menu_item {
+    font-size: 12px;
+  }
+  .header_slogan {
+    display: none;
+  }
+  .history_years {
+    display: none;
+  }
+  .products_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .locations_info_number {
+    font-size: 30px;
+    padding-bottom: 14px;
+    margin-bottom: 18px;
+  }
+  .locations_info_name {
+    font-size: 16px;
+  }
+  .locations_info_text {
+    font-size: 14px;
+  }
+  .footer_wrap {
+    flex-wrap: wrap;
+  }
+  .footer_logo {
+    margin-right: 70px;
+  }
+  .footer_col {
+    width: 24%;
+  }
+  .footer_col_first {
+    width: 100%;
+    order: 5;
+    display: flex;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  h1 .underline:after {
+    height: 12px;
+    right: 8px;
+    bottom: 2px;
+  }
+  .nav {
+    background: #214261;
+  }
+  .nav_work {
+    width: 100%;
+    text-align: center;
+  }
+  .nav_location, .nav_menu {
+    display: none;
+  }
+  .header_menu, .header_mail, .header_top_btn {
+    display: none;
+  }
+  .header_logo {
+    width: 120px;
+  }
+  .header_top {
+    padding: 16px 0;
+  }
+  .header_title {
+    margin-bottom: 46px;
+  }
+  .header_offer {
+    padding: 50px 0 90px;
+  }
+  .header_btn {
+    width: 200px;
+    height: 46px;
+    font-size: 14px;
+  }
+  .pros_item {
+    width: 48%;
+  }
+  .history_content {
+    flex-direction: column;
+  }
+  .history_info {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .partners_wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .news_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .locations_info {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+  .questions_wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .questions_desc a {
+    display: block;
+  }
+  .questions_credits {
+    line-height: 2;
+  }
+  .questions_credits a {
+    display: block;
+  }
+  .footer_logo {
+    display: none;
+  }
+  .footer_logo-mobile {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .footer_col {
+    width: 49%;
+  }
+  .footer_col_contacts {
+    order: 2;
+  }
+  .footer_col_catalog {
+    order: 3;
+  }
+  .footer_col_address {
+    order: 4;
+  }
+  .footer_col_first {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer_company {
+    margin-top: 0;
+  }
+  .footer_wrap {
+    padding-bottom: 0;
+  }
+  .footer_footer {
+    flex-direction: column-reverse;
+    border: none;
+  }
+  .footer_footer a {
+    display: block;
+    padding-bottom: 20px;
+    margin-bottom: 17px;
+    border-bottom: 1px solid #375979;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 540px;
+  }
+  .header_logo {
+    width: 100px;
+  }
+  .header_top {
+    padding: 10px 0;
+  }
+  .header_phone {
+    font-size: 12px;
+  }
+  .header_search {
+    height: 40px;
+  }
+  .pros_item_name {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    width: 90%;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h1 .space {
+    display: none;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  .title-desc {
+    font-size: 12px;
+  }
+  .header_offer {
+    padding: 30px 0 50px;
+  }
+  .header_title {
+    margin-bottom: 20px;
+  }
+  .header_phones, .header_search {
+    display: none;
+  }
+  .header_nav {
+    background: #fff;
+  }
+  .header_nav .container {
+    width: 100%;
+  }
+  .header_top {
+    padding: 0;
+    padding-left: 5%;
+  }
+  .header_top_mobile {
+    display: flex;
+  }
+  .header_top_mobile_item {
+    background: #fff;
+    width: 54px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_top_mobile_item:first-child {
+    border-right: 1px solid #E5E5E5;
+  }
+  .pros {
+    padding: 50px 0 40px;
+  }
+  .pros_item {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0;
+    width: 90%;
+  }
+  .products_wrap {
+    gap: 4px;
+  }
+  .product {
+    padding: 12px 10px;
+  }
+  .product_name {
+    font-size: 14px;
+    height: 100px;
+  }
+  .product_code {
+    display: none;
+  }
+  .locations {
+    padding: 46px 0;
+  }
+  .locations_info {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .locations_info_number {
+    font-size: 28px;
+  }
+  .locations_info_name {
+    font-size: 14px;
+  }
+  .history_img {
+    min-width: auto;
+    width: 100%;
+  }
+  .partners_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news_wrap {
+    grid-template-columns: 1fr;
+  }
+  .questions {
+    background: url("../img/bg-questions.png") no-repeat center/cover;
+  }
+  .questions_wrap {
+    background: none;
+    padding: 0;
+  }
+  .footer_logo-mobile {
+    text-align: center;
+  }
+  .footer_wrap {
+    gap: 25px;
+  }
+  .footer_text {
+    max-width: initial;
+  }
+  .footer_col {
+    width: 100%;
+  }
+  .footer_col_first {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .footer_col_catalog {
+    display: none;
+  }
+  .footer_col_address {
+    order: 2;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #375979;
+  }
+  .footer_col_contacts {
+    order: 3;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #375979;
+  }
+  .footer_menu_item {
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px solid #375979;
+  }
+}/*# sourceMappingURL=media.css.map */

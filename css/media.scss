@@ -1,0 +1,454 @@
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 1140px;
+    }
+    .nav {
+        &_menu {
+            gap: 20px;
+            &_item {
+                font-size: 14px;
+            }
+        }
+    }
+    .header {
+        &_logo {
+            width: 140px;
+        }
+        &_search {
+            width: 280px;
+        }
+        &_menu {
+            &_item {
+                font-size: 14px;
+                height: 38px;
+            }
+        }
+        &_top {
+            &_btn {
+                width: 150px;
+            }
+        }
+    }
+    .pros {
+        &_wrap {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+        &_item {
+            width: 30%;
+            margin-top: 20px;
+        }
+    }
+    .news {
+        &_wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .products {
+        &_wrap {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+    .footer {
+        &_text {
+            max-width: 240px;
+        }
+        &_item {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+    .nav {
+        &_menu {
+            gap: 12px;
+            &_item {
+                font-size: 12px;
+            }
+        }
+    }
+    .header {
+        &_slogan {
+            display: none;
+        }
+    }
+    .history {
+        &_years {
+            display: none;
+        }
+    }
+    .products {
+        &_wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .locations {
+        &_info {
+            &_number {
+                font-size: 30px;
+                padding-bottom: 14px;
+                margin-bottom: 18px;
+            }
+            &_name {
+                font-size: 16px;
+            }
+            &_text {
+                font-size: 14px;
+            }
+        }
+    }
+    .footer {
+        &_wrap {
+            flex-wrap: wrap;
+        }
+
+        &_logo {
+            margin-right: 70px;
+        }
+
+        &_col {
+            width: 24%;
+
+            &_first {
+                width: 100%;
+                order: 5;
+                display: flex;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+    h1 {
+        font-size: 36px;
+
+        .underline {
+            &:after {
+                height: 12px;
+                right: 8px;
+                bottom: 2px;
+            }
+        }
+    }
+    .nav {
+        background: #214261;
+        &_work {
+            width: 100%;
+            text-align: center;
+        }
+        &_location, &_menu {
+            display: none;
+        }
+    }
+    .header {
+        &_menu, &_mail, &_top_btn {
+            display: none;
+        }
+        &_logo {
+            width: 120px;
+        }
+        &_top {
+            padding: 16px 0;
+        }
+        &_title {
+            margin-bottom: 46px;
+        }
+        &_offer {
+            padding: 50px 0 90px;
+        }
+        &_btn {
+            width: 200px;
+            height: 46px;
+            font-size: 14px;
+        }
+        // &_nav {
+        //     background: #fff;
+        // }
+    }
+    .pros {
+        &_item {
+            width: 48%;
+        }
+    }
+    .history {
+        &_content {
+            flex-direction: column;
+        }
+        &_info {
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+    }
+    .partners {
+        &_wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    .news {
+        &_wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .locations_info {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+    .questions {
+        &_wrap {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        &_desc {
+            a {
+                display: block;
+            }
+        }
+        &_credits {
+            line-height: 2;
+            a {
+                display: block;
+            }
+        }
+    }
+    .footer {
+        &_logo {
+            display: none;
+
+            &-mobile {
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        &_col {
+            width: 49%;
+
+            &_contacts {
+                order: 2
+            }
+            &_catalog {
+                order: 3;
+            }
+            &_address {
+                order: 4;
+            }
+            &_first {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        &_company {
+            margin-top: 0;
+        }
+        &_wrap {
+            padding-bottom: 0;
+        }
+        &_footer {
+            flex-direction: column-reverse;
+            border: none;
+
+            a {
+                display: block;
+                padding-bottom: 20px;
+                margin-bottom: 17px;
+                border-bottom: 1px solid #375979;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+    .header {
+        &_logo {
+            width: 100px;
+        }
+        &_top {
+            padding: 10px 0;
+        }
+        &_phone {
+            font-size: 12px;
+        }
+        &_search {
+            height: 40px;
+        }
+    }
+    .pros {
+        &_item {
+            &_name {
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
+    h1 {
+        font-size: 22px;
+
+        .space {
+            display: none;
+        }
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .title-desc {
+        font-size: 12px;
+    }
+    .header {
+        &_offer {
+            padding: 30px 0 50px;
+        }
+        &_title {
+            margin-bottom: 20px;
+        }
+        &_phones, &_search {
+            display: none;
+        }
+        &_nav {
+            background: #fff;
+
+            .container {
+                width: 100%;
+            }
+        }
+        &_top {
+            padding: 0;
+            padding-left: 5%;
+            &_mobile {
+                display: flex;
+
+                &_item {
+                    background: #fff;
+                    width: 54px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:first-child {
+                        border-right: 1px solid #E5E5E5;
+                    }
+                }
+            }
+        }
+    }
+    .pros {
+        padding: 50px 0 40px;
+        &_item {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-top: 0;
+            width: 90%;
+        }
+    }
+    .products {
+        &_wrap {
+            gap: 4px;
+        }
+    }
+    .product {
+        padding: 12px 10px;
+        &_name {
+            font-size: 14px;
+            height: 100px;
+        }
+        &_code {
+            display: none;
+        }
+    }
+    .locations {
+        padding: 46px 0;
+        &_info {
+            grid-template-columns: 1fr;
+            gap: 30px;
+
+            &_number {
+                font-size: 28px;
+            }
+            &_name {
+                font-size: 14px;
+            }
+        }
+    }
+    .history {
+        &_img {
+            min-width: auto;
+            width: 100%;
+        }
+    }
+    .partners {
+        &_wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .news {
+        &_wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+    .questions {
+        background: url("../img/bg-questions.png") no-repeat center / cover;
+
+        &_wrap {
+            background: none;
+            padding: 0;
+        }
+    }
+    .footer {
+        &_logo-mobile {
+            text-align: center;
+        }
+        &_wrap {
+            gap: 25px;
+        }
+        &_text {
+            max-width: initial;
+        }
+        &_col {
+            width: 100%;
+
+            &_first {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            &_catalog {
+                display: none;
+            }
+            &_address {
+                order: 2;
+                padding-bottom: 24px;
+                border-bottom: 1px solid #375979;
+            }
+            &_contacts {
+                order: 3;
+                padding-bottom: 24px;
+                border-bottom: 1px solid #375979;
+            }
+        }
+        &_menu {
+            &_item {
+                display: block;
+                line-height: 40px;
+                border-bottom: 1px solid #375979;
+            }
+        }
+    }
+}
