@@ -7,10 +7,80 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+    <div class="hidden">
+        <div class="hidden_wrap">
+            <div class="hidden_top">
+                <img src="img/logo-white.png" alt="roskab" class="hidden_logo">
+                <img src="img/close-icon.svg" alt="close" class="hidden_close" id="burger_close">
+            </div>
+            <div class="nav_location hidden_location">
+                <img src="img/location-icon.svg" alt="location">
+                <div>
+                    Ваш город: <span>Москва</span> 
+                </div>
+            </div>
+            <ul class="hidden_menu">
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        Компания
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        Калькуляторы
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        Новости
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        Склады
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        Для клиентов
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        География поставок
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="hidden_menu_item">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+            <div class="footer_links hidden_links">
+                <a href="#" class="footer_link">
+                    <img src="img/mail-icon.png" alt="mail">
+                    direc@roskab.ru
+                </a>
+                <a href="+78462641441" class="footer_link">
+                    <img src="img/mail-icon.png" alt="mail">
+                    +7 846 264-14-41
+                </a>
+                <a href="+78462641331" class="footer_link">
+                    <img src="img/mail-icon.png" alt="mail">
+                    +7 846 264-13-31
+                </a>
+            </div>
+            <button class="btn hidden_btn">
+                ЗАКАЗАТЬ ЗВОНОК
+            </button>
+        </div>
+    </div>
     <div class="nav">
         <div class="container">
             <div class="nav_wrap">
@@ -18,7 +88,10 @@
                     РАБОТАЕМ ТОЛЬКО С ЮР. ЛИЦАМИ
                 </div>
                 <div class="nav_location">
-                    Ваш город: <span>Москва</span> 
+                    <img src="img/location-icon.svg" alt="location">
+                    <div>
+                        Ваш город: <span>Москва</span> 
+                    </div>
                 </div>
                 <ul class="nav_menu">
                     <li>
@@ -232,108 +305,298 @@
             <h2 class="history_title">
                 История компании
             </h2>
-            <div class="history_top">
-                <div class="history_top_years">
-                    <div class="history_top_year">
-                        1999
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2000
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2001
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2002
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2003
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2004
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2005
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year active">
-                        2006
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2007
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2008
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2009
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2010
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2011
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2012
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2013
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2014
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2015
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2016
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
-                    <div class="history_top_year">
-                        2017
-                    </div>
-                    <div class="history_top_year">
-                        2018
-                    </div>
-                    <div class="history_top_year">
-                        2019
-                    </div>
-                    <div class="history_top_year">
-                        2020
-                    </div>
-                    <div class="history_top_year">
-                        2021
-                    </div>
-                    <div class="history_top_year">
-                        2022
+                    <div class="swiper-slide">
+                        <div class="history_content">
+                            <div class="history_years">
+                                <div class="history_year active"> 2006 </div>
+                                <div class="history_year"> 2007 </div>
+                                <div class="history_year"> 2008 </div>
+                            </div>
+                            <div class="history_info">
+                                Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
+                            </div>
+                            <div class="history_img">
+                                <img src="img/year-img.png" alt="history">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="history_top_arrows arrows">
-                    <div class="arrow left">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.707153 0L8.48533 7.77817L7.77822 8.48528L7.01472 7.72178L4.66108e-05 0.707107L0.707153 0Z" fill="black"/>
-                            <path d="M0.763501 15.5L7.77822 8.48528L7.01472 7.72178L8.07162e-08 14.7365L0.763501 15.5Z" fill="black"/>
-                        </svg>
-                    </div>
-                    <div class="arrow active">
-                        <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.707153 0L8.48533 7.77817L7.77822 8.48528L7.01472 7.72178L4.66108e-05 0.707107L0.707153 0Z" fill="black"/>
-                            <path d="M0.763501 15.5L7.77822 8.48528L7.01472 7.72178L8.07162e-08 14.7365L0.763501 15.5Z" fill="black"/>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="history_content">
-                <div class="history_years">
-                    <div class="history_year active"> 2006 </div>
-                    <div class="history_year"> 2007 </div>
-                    <div class="history_year"> 2008 </div>
-                </div>
-                <div class="history_info">
-                    Впервые о себе «РосКабельСвязь» заявила при поставках магистральных и силовых позиций кабеля на РЖД. На российском рынке появилась компания с недорогим, качественным кабелем для железных дорог. Поставляя на главные материальные склады РЖД, «РосКабельСвязь» с самого начала громко заявила о себе среди поставщиков и заводов – монополистов работающих на РЖД и РАО ЕЭС. <br><br> Кабель всегда пользовался спросом, продажи росли быстрыми темпами, расширялся ассортимент, увеличивалась география поставок по России и СНГ, появлялись новые отношения с заводами.
-                </div>
-                <div class="history_img">
-                    <img src="img/year-img.png" alt="history">
-                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
         </div>
     </section>
@@ -847,5 +1110,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
