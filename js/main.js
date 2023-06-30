@@ -42,7 +42,7 @@ var swiper = new Swiper(".mySwiper", {
         el: ".swiper-pagination",
         clickable: true,
         dynamicBullets: true,
-        dynamicMainBullets: 10,
+        dynamicMainBullets: 5,
         renderBullet: function (index, className) {
         return '<span class="' + className + '">' + (index + 1999) + "</span>";
         },

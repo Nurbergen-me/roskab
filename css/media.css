@@ -59,7 +59,7 @@
     display: none;
   }
   .products_wrap {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .locations_info_number {
     font-size: 30px;
@@ -109,6 +109,13 @@
   .nav_location, .nav_menu {
     display: none;
   }
+  .header_swiper_content {
+    padding-top: 100px;
+    height: 100%;
+  }
+  .header-main, .header .swiper {
+    height: 470px;
+  }
   .header_menu, .header_mail, .header_top_btn {
     display: none;
   }
@@ -132,12 +139,19 @@
   .pros_item {
     width: 48%;
   }
+  .history .swiper {
+    height: auto;
+    padding-top: 40px;
+  }
   .history_content {
     flex-direction: column;
   }
   .history_info {
     padding-left: 0;
     margin-bottom: 20px;
+  }
+  .products_wrap {
+    grid-template-columns: repeat(2, 1fr);
   }
   .partners_wrap {
     grid-template-columns: repeat(3, 1fr);
@@ -225,6 +239,9 @@
   }
 }
 @media screen and (max-width: 576px) {
+  .header-main, .header .swiper {
+    height: 360px;
+  }
   .container {
     width: 90%;
   }
@@ -239,6 +256,12 @@
   }
   .title-desc {
     font-size: 12px;
+  }
+  .header .swiper-pagination {
+    bottom: 20px;
+  }
+  .header .swiper-button-prev, .header .swiper-button-next {
+    display: none;
   }
   .header_offer {
     padding: 30px 0 50px;
