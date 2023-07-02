@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roskab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <section class="delivery" id="delivery">
+        <div class="container">
+            <div class="breadcrumbs">
+                <a href="#" class="breadcrumbs_link">Главная</a>
+                / 
+                <a href="#" class="breadcrumbs_link active">Доставка кабеля</a>
+            </div>
+            <h2 class="page_title">
+                Доставка кабеля
+            </h2>
+            <div class="delivery_wrap">
+                <div class="delivery_col">
+                    <div class="delivery_item">
+                        <div class="name">
+                            Калькулятор веса кабеля и тары
+                        </div>
+                        <div class="delivery_add">
+                            <input type="text" placeholder="Введите наименование ... ">
+                            <button>
+                                ДОБАВИТЬ
+                            </button>
+                        </div>
+                    </div>
+                    <div class="delivery_example">
+                        Например, ВВГнг(A)-LS 4х50  ААШв 3х240 - 10кВ  Барабан 12
+                    </div>
+                    <div class="delivery_item">
+                        <div class="name">
+                            Добавить барабаны
+                        </div>
+                        <div class="delivery_add">
+                            <input type="text" placeholder="Введите наименование ... ">
+                            <button>
+                                ДОБАВИТЬ
+                            </button>
+                        </div>
+                    </div>
+                    <div class="delivery_table">
+                        <table>
+                            <tr>
+                                <th>
+                                    Наименование
+                                </th>
+                                <th>
+                                    
+                                </th>
+                                <th>
+                                    Длина
+                                </th>
+                                <th>
+                                    Масса
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="img/delete-icon.svg" alt="delete">
+                                    ВВГнг(A)-LS 4х50
+                                </td>
+                                <td>
+                                    2 770,0 кг/км
+                                </td>
+                                <td>
+                                    <div class="delivery_table_input">
+                                        <input type="text"> км
+                                    </div>
+                                </td>
+                                <td>
+                                    5 540 кг
+                                </td>
+                            </tr>
+                            <tr class="last">
+                                <td>
+                                    <img src="img/delete-icon.svg" alt="delete">
+                                    ВВГнг(A)-LS 4х50
+                                </td>
+                                <td>
+                                    2 770,0 кг/км
+                                </td>
+                                <td>
+                                    <div class="delivery_table_input">
+                                        <input type="text"> км
+                                    </div>
+                                </td>
+                                <td>
+                                    0 кг
+                                </td>
+                            </tr>
+                            <tr class="total">
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    Итого
+                                </td>
+                                <td>
+                                    5 540 кг
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    Объём барабанов
+                                </td>
+                                <td>
+                                    0,000 м3
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="delivery_col">
+                    <div class="delivery_item">
+                        <div class="name">
+                            Место доставки-выгрузки кабеля
+                        </div>
+                        <input type="text" class="form-input" placeholder="Город">
+                        <input type="text" class="form-input" placeholder="Адрес">
+                        <input type="text" class="form-input" placeholder="Название компании">
+                        <input type="text" class="form-input" placeholder="Телефон">
+                        <button class="btn delivery_btn">
+                            отправить заявку
+                        </button>
+                        <div class="delivery_confirm">
+                            Заполняя данную форму, вы даёте согласие на 
+                            <a href="#">обработку персональных данных</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="calc" id="calc">
+        <div class="container">
+            <h2 class="calc_title">
+                Калькулятор транспортных компаний
+            </div>
+            <div class="calc_wrap">
+                
+            </div>
+        </div>
+    </section>
+    <section class="pros" id="pros">
+        <div class="container">
+            <div class="pros_wrap">
+                <div class="pros_item">
+                    <div class="pros_item_icon">
+                        <img src="img/pros-1.png" alt="pros icon">
+                    </div>
+                    <div class="pros_item_info">
+                        <h4 class="pros_item_name">
+                            1999 - 2023 г.
+                        </h4>
+                        <div class="pros_item_text">
+                            24 года поставляем <br> кабель
+                        </div>
+                    </div>
+                </div>
+                <div class="pros_item">
+                    <div class="pros_item_icon">
+                        <img src="img/pros-2.png" alt="pros icon">
+                    </div>
+                    <div class="pros_item_info">
+                        <h4 class="pros_item_name">
+                            Документы
+                        </h4>
+                        <div class="pros_item_text">
+                            полный пакет документов <br> и сертификатов
+                        </div>
+                    </div>
+                </div>
+                <div class="pros_item">
+                    <div class="pros_item_icon">
+                        <img src="img/pros-3.png" alt="pros icon">
+                    </div>
+                    <div class="pros_item_info">
+                        <h4 class="pros_item_name">
+                            ГОСТ / ТУ 315
+                        </h4>
+                        <div class="pros_item_text">
+                            Богатый ассортимент <br> продукции ТУ 315
+                        </div>
+                    </div>
+                </div>
+                <div class="pros_item">
+                    <div class="pros_item_icon">
+                        <img src="img/pros-4.png" alt="pros icon">
+                    </div>
+                    <div class="pros_item_info">
+                        <h4 class="pros_item_name">
+                            2000 км2 +
+                        </h4>
+                        <div class="pros_item_text">
+                            В наличии более  <br> 2000 км2 кабеля
+                        </div>
+                    </div>
+                </div>
+                <div class="pros_item">
+                    <div class="pros_item_icon">
+                        <img src="img/pros-5.png" alt="pros icon">
+                    </div>
+                    <div class="pros_item_info">
+                        <h4 class="pros_item_name">
+                            1000 +
+                        </h4>
+                        <div class="pros_item_text">
+                            Более одной тысячи <br> довольных клиентов в стране
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

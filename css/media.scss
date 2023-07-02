@@ -58,6 +58,24 @@
             font-size: 12px;
         }
     }
+    .categories {
+        &_products {
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        &_product {
+            &_top {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &_info {
+                width: 55%;
+            }
+            &_img {
+                width: 40%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -119,6 +137,12 @@
                 order: 5;
                 display: flex;
             }
+        }
+    }
+    .categories {
+        &_products {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
         }
     }
 }
@@ -280,6 +304,28 @@
             }
         }
     }
+    .delivery {
+        &_wrap {
+            display: block;
+        }
+    }
+    .about {
+        &_content {
+            &_row {
+                flex-direction: column;
+            }
+
+            iframe {
+                min-width: auto;
+                max-width: 100%;
+            }
+        }
+    }
+    .categories {
+        .sidebar {
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -304,6 +350,39 @@
         &_item {
             &_name {
                 margin-bottom: 16px;
+            }
+        }
+    }
+    .categories {
+        &_products {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+        }
+        &_product {
+            &_top {
+                gap: 10px;
+            }
+            &_tabs {
+                &_top {
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+            &_tab {
+                width: 100%;
+                text-align: center;
+            }
+            &_img {
+                width: 100%;
+                img {
+                    width: 100%;
+                    height: auto;
+                    aspect-ratio: 1 / 1;
+                }
+            }
+            &_info {
+                width: 100%;
+                margin-left: 0;
             }
         }
     }
@@ -385,6 +464,11 @@
     }
     .products {
         &_wrap {
+            gap: 4px;
+        }
+    }
+    .categories {
+        &_products {
             gap: 4px;
         }
     }
@@ -473,6 +557,23 @@
                 display: block;
                 line-height: 40px;
                 border-bottom: 1px solid #375979;
+            }
+        }
+    }
+    .vacancies {
+        &_item {
+            max-height: 56px;
+            &_top {
+                padding: 12px 18px;
+                font-size: 14px;
+
+                .icon {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+            &_body {
+                padding: 24px 18px;
             }
         }
     }

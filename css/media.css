@@ -41,6 +41,20 @@
   .footer_item {
     font-size: 12px;
   }
+  .categories_products {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .categories_product_top {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .categories_product_info {
+    width: 55%;
+  }
+  .categories_product_img {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .container {
@@ -85,6 +99,10 @@
     width: 100%;
     order: 5;
     display: flex;
+  }
+  .categories_products {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -217,6 +235,19 @@
     margin-bottom: 17px;
     border-bottom: 1px solid #375979;
   }
+  .delivery_wrap {
+    display: block;
+  }
+  .about_content_row {
+    flex-direction: column;
+  }
+  .about_content iframe {
+    min-width: auto;
+    max-width: 100%;
+  }
+  .categories .sidebar {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -236,6 +267,33 @@
   }
   .pros_item_name {
     margin-bottom: 16px;
+  }
+  .categories_products {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .categories_product_top {
+    gap: 10px;
+  }
+  .categories_product_tabs_top {
+    flex-direction: column;
+    width: 100%;
+  }
+  .categories_product_tab {
+    width: 100%;
+    text-align: center;
+  }
+  .categories_product_img {
+    width: 100%;
+  }
+  .categories_product_img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+  }
+  .categories_product_info {
+    width: 100%;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -307,6 +365,9 @@
     width: 90%;
   }
   .products_wrap {
+    gap: 4px;
+  }
+  .categories_products {
     gap: 4px;
   }
   .product {
@@ -382,5 +443,19 @@
     display: block;
     line-height: 40px;
     border-bottom: 1px solid #375979;
+  }
+  .vacancies_item {
+    max-height: 56px;
+  }
+  .vacancies_item_top {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+  .vacancies_item_top .icon {
+    width: 32px;
+    height: 32px;
+  }
+  .vacancies_item_body {
+    padding: 24px 18px;
   }
 }/*# sourceMappingURL=media.css.map */
