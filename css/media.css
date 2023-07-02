@@ -104,6 +104,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  .partners_wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media screen and (max-width: 992px) {
   .container {
@@ -248,6 +251,9 @@
   .categories .sidebar {
     display: none;
   }
+  .partners_wrap {
+    gap: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {
@@ -294,6 +300,10 @@
   .categories_product_info {
     width: 100%;
     margin-left: 0;
+  }
+  .partners_wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -457,5 +467,9 @@
   }
   .vacancies_item_body {
     padding: 24px 18px;
+  }
+  .partners_wrap {
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
 }/*# sourceMappingURL=media.css.map */
