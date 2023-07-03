@@ -254,6 +254,16 @@
   .partners_wrap {
     gap: 20px;
   }
+  .reviews_wrap {
+    flex-direction: column;
+  }
+  .reviews_left, .reviews_right {
+    width: 100%;
+  }
+  .reviews_form {
+    width: 100%;
+    min-width: auto;
+  }
 }
 @media screen and (max-width: 768px) {
   .container {

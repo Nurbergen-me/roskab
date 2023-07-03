@@ -91,6 +91,117 @@ if (aboutSwiper) {
 }
 
 
+// Initialize Swiper Partners
+const partnersSwiper = document.querySelector('.partnersSwiper')
+if (partnersSwiper) {
+    var swiper = new Swiper(".partnersSwiper", {
+        slidesPerView: 6,
+        spaceBetween: 18,
+        initialSlide: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 6,
+            }
+        }
+    });
+}
+
+
+// Initialize Swiper Reviews
+const reviewSwiper1 = document.querySelector('.reviewSwiper1')
+if (reviewSwiper1) {
+    var swiper = new Swiper(".reviewSwiper1", {
+        slidesPerView: 6,
+        spaceBetween: 18,
+        initialSlide: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 6,
+            }
+        }
+    });
+}
+const reviewSwiper2 = document.querySelector('.reviewSwiper2')
+if (reviewSwiper2) {
+    var swiper = new Swiper(".reviewSwiper2", {
+        slidesPerView: 6,
+        spaceBetween: 18,
+        initialSlide: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 6,
+            }
+        }
+    });
+}
+
+
 // Vacancies
 
 const vacanciesList = document.querySelectorAll('.vacancies_item_top')
