@@ -54,6 +54,23 @@ if (mySwiper) {
             return '<span class="' + className + '">' + (index + 1999) + "</span>";
             },
         },
+        breakpoints: {
+            320: {
+                pagination: {
+                    dynamicMainBullets: 1,
+                }
+            },
+            576: {
+                pagination: {
+                    dynamicMainBullets: 2,
+                }
+            },
+            1440: {
+                pagination: {
+                    dynamicMainBullets: 10,
+                }
+            },
+        }
     });
     
 }

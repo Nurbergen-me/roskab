@@ -2,11 +2,9 @@
   .container {
     width: 1140px;
   }
-  .nav_menu {
-    gap: 20px;
-  }
   .nav_menu_item {
     font-size: 14px;
+    padding: 0 10px;
   }
   .header_logo {
     width: 140px;
@@ -16,7 +14,8 @@
   }
   .header_menu_item {
     font-size: 14px;
-    height: 38px;
+    padding: 12px 13px;
+    white-space: normal;
   }
   .header_top_btn {
     width: 150px;
@@ -60,16 +59,11 @@
   .container {
     width: 960px;
   }
-  .nav_menu {
-    gap: 12px;
-  }
   .nav_menu_item {
     font-size: 12px;
+    padding: 0 6px;
   }
   .header_slogan {
-    display: none;
-  }
-  .history_years {
     display: none;
   }
   .products_wrap {
@@ -163,6 +157,10 @@
   .history .swiper {
     height: auto;
     padding-top: 40px;
+  }
+  .history .swiper-pagination {
+    width: calc(100% - 10px) !important;
+    transform: translate(-60px) !important;
   }
   .history_content {
     flex-direction: column;

@@ -4,9 +4,9 @@
     }
     .nav {
         &_menu {
-            gap: 20px;
             &_item {
                 font-size: 14px;
+                padding: 0 10px;
             }
         }
     }
@@ -20,7 +20,8 @@
         &_menu {
             &_item {
                 font-size: 14px;
-                height: 38px;
+                padding: 12px 13px;
+                white-space: normal;
             }
         }
         &_top {
@@ -84,9 +85,9 @@
     }
     .nav {
         &_menu {
-            gap: 12px;
             &_item {
                 font-size: 12px;
+                padding: 0 6px;
             }
         }
     }
@@ -97,7 +98,7 @@
     }
     .history {
         &_years {
-            display: none;
+            // display: none;
         }
     }
     .products {
@@ -218,6 +219,11 @@
         .swiper {
             height: auto;
             padding-top: 40px;
+
+            &-pagination {
+                width: calc(100% - 10px) !important;
+                transform: translate(-60px) !important;
+            }
         }
         &_content {
             flex-direction: column;
