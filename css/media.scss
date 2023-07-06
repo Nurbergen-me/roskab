@@ -354,6 +354,11 @@
             min-width: auto;
         }
     }
+    .certificates {
+        &_top, &_body {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -418,6 +423,28 @@
         &_wrap {
             grid-template-columns: repeat(2, 1fr);
             gap: 12px;
+        }
+    }
+    .contacts {
+        &_items {
+            grid-template-columns: 1fr;
+
+            &_text {
+                font-size: 16px;
+            }
+        }
+        &_data {
+            &_item {
+                font-size: 16px;
+                margin-bottom: 8px;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+            &_body {
+                height: 350px;
+            }
         }
     }
 }
@@ -615,6 +642,17 @@
         &_wrap {
             grid-template-columns: 1fr;
             gap: 8px;
+        }
+    }
+    .certificates {
+        &_top, &_body {
+            grid-template-columns: 1fr;
+        }
+
+        &_title {
+            white-space: initial;
+            position: relative;
+            padding: 0;
         }
     }
 }
