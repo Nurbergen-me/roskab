@@ -243,6 +243,14 @@ li {
   margin-top: 10px;
 }
 
+.top-banner {
+  background: #1e6fb9;
+  border-radius: 4px;
+  height: 90px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
 .container {
   max-width: 1410px;
   width: calc(100% - 30px);
@@ -1175,6 +1183,7 @@ li {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
+  margin-top: 8px;
   margin-bottom: 36px;
 }
 .breadcrumbs_link {
@@ -1311,10 +1320,41 @@ li {
 }
 
 .statistics {
+  padding-top: 0;
   padding-bottom: 70px;
 }
-.statistics_wrap {
-  height: 300px;
+.statistics_top-text {
+  background: #6394C0;
+  border-radius: 4px;
+  padding: 2px;
+  color: #fff;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+.statistics_content {
+  text-align: left;
+  margin-top: 40px;
+  width: 100%;
+}
+.statistics_content_item {
+  margin-bottom: 1px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: 100%;
+}
+.statistics_content_left {
+  background: #214261;
+  color: #fff;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 18px;
+}
+.statistics_content_right {
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 20px;
+  font-size: 18px;
 }
 
 .vacancies {

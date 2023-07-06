@@ -332,6 +332,10 @@
   .contacts_data_body {
     height: 350px;
   }
+  .statistics_content_item {
+    display: flex;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 576px) {
   .header-main, .header .swiper {
