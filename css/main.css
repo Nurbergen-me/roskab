@@ -49,6 +49,11 @@ input::placeholder {
   font-weight: 300;
 }
 
+select {
+  outline: none;
+  border: none;
+}
+
 .form-input {
   background: #F2F2F2;
   border-radius: 4px;
@@ -143,6 +148,10 @@ h2 {
   cursor: pointer;
   transition: 0.5s ease;
 }
+.btn:hover {
+  background: #0f6fc4;
+  border-color: #0f6fc4;
+}
 .btn-secondary {
   background: #fff;
   color: #1E81D9;
@@ -177,6 +186,10 @@ h2 {
 }
 .arrow.left svg, .swiper-button-next.left svg, .swiper-button-prev.left svg {
   transform: rotate(180deg);
+}
+.arrow.bottom, .swiper-button-next.bottom, .swiper-button-prev.bottom {
+  top: auto;
+  bottom: 0;
 }
 .arrow.active, .arrow:hover, .swiper-button-next.active, .swiper-button-next:hover, .swiper-button-prev.active, .swiper-button-prev:hover {
   background: #1E81D9;
@@ -323,12 +336,16 @@ li {
   border: none;
 }
 .hidden_menu_item {
-  display: block;
+  display: flex;
+  align-items: center;
   font-size: 18px;
   color: #fff;
   line-height: 55px;
   border-bottom: 1px solid #375979;
   padding-left: 10px;
+}
+.hidden_menu_item svg {
+  margin-left: 12px;
 }
 .hidden_links {
   display: flex;
@@ -698,6 +715,10 @@ li {
   margin: 30px auto 0;
   width: 240px;
 }
+.products_btn:hover {
+  background: #0f6fc4;
+  border-color: #0f6fc4;
+}
 
 .product {
   background: #fff;
@@ -790,7 +811,10 @@ li {
 }
 
 .partners {
-  padding: 70px 0;
+  padding: 70px 0 60px;
+}
+.partners_desc {
+  margin-bottom: 20px;
 }
 .partners_wrap {
   display: grid;
@@ -803,6 +827,7 @@ li {
   border-radius: 3px;
   border: 1px solid transparent;
   margin-top: 10px;
+  margin-bottom: 50px;
   transition: 0.5s ease;
 }
 .partners_item:hover {
@@ -910,6 +935,10 @@ li {
   color: #4184C0;
   margin: 0 12px;
 }
+.news_main-btn:hover {
+  background: #0f6fc4;
+  border-color: #0f6fc4;
+}
 
 .locations {
   background: #1E81D9;
@@ -986,6 +1015,19 @@ li {
   margin-bottom: 25px;
   border-radius: 4px;
   overflow: hidden;
+}
+.questions_input.with-select select::-ms-expand {
+  display: none;
+}
+.questions_input.with-select:after {
+  content: "";
+  background: #fff url("../img/arrow-down-black-icon.svg") no-repeat left/contain;
+  width: 27px;
+  height: 6px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .questions_input_icon {
   background: #1e81d9;

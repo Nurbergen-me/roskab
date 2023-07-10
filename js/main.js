@@ -17,25 +17,6 @@ if (burgerMenu) {
     })
 }
 
-
-// Initialize Swiper 
-const heroSwiper = document.querySelector('.heroSwiper')
-if (heroSwiper) {
-    var swiper = new Swiper(".heroSwiper", {
-        initialSlide: 0,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-            dynamicMainBullets: 5,
-        },
-    });
-}
-
 // Initialize Swiper 
 const mySwiper = document.querySelector('.mySwiper')
 if (mySwiper) {
@@ -73,6 +54,24 @@ if (mySwiper) {
         }
     });
     
+}
+
+// Initialize Swiper 
+const heroSwiper = document.querySelector('.heroSwiper')
+if (heroSwiper) {
+    var swiper = new Swiper(".heroSwiper", {
+        initialSlide: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+        },
+    });
 }
 
 

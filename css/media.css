@@ -316,6 +316,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+  .partners_item {
+    margin-bottom: 40px;
+  }
+  .partners .arrow, .partners .swiper-button-next, .partners .swiper-button-prev {
+    display: none;
+  }
   .contacts_items {
     grid-template-columns: 1fr;
   }
