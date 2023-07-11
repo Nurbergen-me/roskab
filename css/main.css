@@ -420,13 +420,14 @@ li {
 .header_nav {
   top: -100%;
   width: 100%;
-  transition: 0.5s ease;
+  transition: 1s ease;
 }
 .header_nav.fixed {
   top: 0;
   position: fixed;
   background: #fff;
   z-index: 20;
+  border-bottom: 1px solid #dfdfdf;
 }
 .header_nav.fixed .header_menu {
   border: none;
@@ -471,6 +472,10 @@ li {
   padding: 20px 16px;
   border: 1px solid #dfdfdf;
   color: #314460;
+  transition: 0.5s ease;
+}
+.header_nav_menu_item:hover {
+  background: #fff;
 }
 .header_nav_btn {
   display: flex;
