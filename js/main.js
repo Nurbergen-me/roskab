@@ -17,6 +17,38 @@ if (burgerMenu) {
     })
 }
 
+const headerNavBtn = document.querySelector('.header_nav_btn')
+const headerNavBurger = document.querySelector('.header_nav_burger')
+const headerNavBurgerClose = document.querySelector('.header_nav_burger_close')
+const headerTopBtn = document.querySelector('.header_top_btn')
+const headerNav = document.querySelector('.header_nav')
+const headerNavMenu = document.querySelector('.header_nav_menu')
+
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if (scroll > 200) {
+        headerNav.classList.add('fixed')
+        headerNavMenu.classList.remove('d-none')
+        headerNavBtn.classList.remove('d-none')
+        headerTopBtn.classList.add('d-none')
+    } else {
+        headerNav.classList.remove('fixed')
+        headerNavMenu.classList.add('d-none')
+        headerNavBtn.classList.add('d-none')
+        headerTopBtn.classList.remove('d-none')
+    }
+});
+
+if (headerNavBtn) {
+    headerNavBtn.addEventListener('click',() => {
+        headerNavMenu.classList.toggle('active')
+        headerNavBurger.classList.toggle('d-none')
+        headerNavBurgerClose.classList.toggle('d-none')
+    })
+}
+
+
+
 // Initialize Swiper 
 const mySwiper = document.querySelector('.mySwiper')
 if (mySwiper) {

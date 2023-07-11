@@ -54,6 +54,10 @@ select {
   border: none;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .form-input {
   background: #F2F2F2;
   border-radius: 4px;
@@ -411,7 +415,71 @@ li {
 
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 11;
+}
+.header_nav {
+  top: -100%;
+  width: 100%;
+  transition: 0.5s ease;
+}
+.header_nav.fixed {
+  top: 0;
+  position: fixed;
+  background: #fff;
+  z-index: 20;
+}
+.header_nav.fixed .header_menu {
+  border: none;
+}
+.header_nav.fixed .header_menu_item {
+  border: none;
+}
+.header_nav.fixed .header_search input {
+  background: #F5F5F5;
+}
+.header_nav.fixed .header_mail_info {
+  color: #000;
+}
+.header_nav.fixed .header_mail span {
+  color: #000;
+}
+.header_nav.fixed .header_phone {
+  color: #000;
+}
+.header_nav.fixed .header_top {
+  background: #fff;
+}
+.header_nav.fixed .header_menu {
+  display: none;
+}
+.header_nav_menu {
+  background: #f5f5f5;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.header_nav_menu.active {
+  max-height: 100vh;
+}
+.header_nav_menu_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px 30px;
+  padding: 20px 0;
+}
+.header_nav_menu_item {
+  padding: 20px 16px;
+  border: 1px solid #dfdfdf;
+  color: #314460;
+}
+.header_nav_btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.header_nav_btn .burger {
+  background: transparent;
+  padding: 0;
 }
 .header-main {
   height: 700px;
@@ -462,10 +530,6 @@ li {
 }
 .header_top_mobile {
   display: none;
-}
-.header_top_btn:hover {
-  background: #0f6fc4;
-  border-color: #0f6fc4;
 }
 .header_slogan span {
   background: #6394C0;

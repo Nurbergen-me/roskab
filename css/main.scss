@@ -59,6 +59,10 @@ select {
     border: none;
 }
 
+.d-none {
+    display: none !important;
+}
+
 .form-input {
     background: #F2F2F2;
     border-radius: 4px;
@@ -465,7 +469,92 @@ li {
 
 .header {
     position: relative;
-    z-index: 1;
+    z-index: 11;
+
+    &_nav {
+        top: -100%;
+        width: 100%;
+        transition: 0.5s ease;
+
+        &.fixed {
+            top: 0;
+            position: fixed;
+            background: #fff;
+            z-index: 20;
+
+            .header {
+                &_menu {
+                    border: none;
+                    &_item {
+                        border: none;
+                    }
+                }
+                &_search {
+                    input {
+                        background: #F5F5F5;
+                    }
+                }
+                &_mail {
+    
+                    &_info {
+                        color: #000;
+                    }
+    
+                    span {
+                        color: #000;
+                    }
+                }
+    
+                &_phone {
+                    color: #000;
+                }
+            }
+
+            .header {
+                &_top {
+                    background: #fff;
+                }
+                &_menu {
+                    display: none;
+                }
+            }
+        }
+
+        &_menu {
+            background: #f5f5f5;
+            max-height: 0;
+            overflow: hidden;
+            transition: 0.5s ease;
+
+            &.active {
+                max-height: 100vh;
+            }
+
+            &_wrap {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 20px 30px;
+                padding: 20px 0;
+            }
+
+            &_item {
+                padding: 20px 16px;
+                border: 1px solid #dfdfdf;
+                color: #314460;
+            }
+        }
+
+        &_btn {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .burger {
+                background: transparent;
+                padding: 0;
+            }
+        }
+    }
 
     &-main {
         height: 700px;
@@ -535,13 +624,6 @@ li {
             display: none;
         }
 
-        &_btn {
-
-            &:hover {
-                background: #0f6fc4;
-                border-color: #0f6fc4;
-            }
-        }
     }
 
     &_slogan {
