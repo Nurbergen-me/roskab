@@ -17,6 +17,15 @@ if (burgerMenu) {
     })
 }
 
+
+const hiddenCatalog = document.querySelector('.hidden_menu_catalog_top')
+
+if (hiddenCatalog) {
+    hiddenCatalog.addEventListener('click', () => {
+        hiddenCatalog.parentNode.classList.toggle('active')
+    })
+}
+
 const headerNavBtn = document.querySelector('.header_nav_btn')
 const headerNavBurger = document.querySelector('.header_nav_burger')
 const headerNavBurgerClose = document.querySelector('.header_nav_burger_close')
