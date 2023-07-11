@@ -226,7 +226,7 @@ h2 {
 }
 
 .swiper-pagination-bullet {
-    background: #fff;
+    background: #ececec;
     opacity: 1;
     border-radius: 4px;
     transition: all 0.3s ease !important;
@@ -471,6 +471,12 @@ li {
         height: 700px;
 
         .header {
+            &_menu {
+                border: none;
+                &_item {
+                    border: none;
+                }
+            }
             &_search {
                 input {
                     background: #fff;
@@ -631,6 +637,7 @@ li {
         justify-content: space-evenly;
         overflow: hidden;
         position: relative;
+        border: 1px solid #214261;
 
         &_item {
             background: #214261;
@@ -643,6 +650,7 @@ li {
             text-align: center;
             transition: 0.5s ease;
             white-space: nowrap;
+            border-right: 1px solid #214261;
 
             &:hover {
                 background: #fff;
@@ -701,12 +709,21 @@ li {
 
 .pros {
     background: #F5F5F5;
-    padding: 60px 0;
+
+    &.with-container {
+        background: transparent;
+
+        .pros_wrap {
+            background: #F5F5F5;
+            padding: 45px 25px;
+        }
+    }
     &_wrap {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 20px;
+        padding: 60px 0;
     }
 
     &_item {
@@ -1474,8 +1491,9 @@ li {
     align-items: center;
     flex-wrap: wrap;
     gap: 8px;
-    margin-top: 8px;
+    margin-top: 20px;
     margin-bottom: 36px;
+    color: #7a7a7a;
 
     &_link {
         line-height: 30px;
@@ -1871,6 +1889,10 @@ li {
             height: 60px;
             margin-bottom: 8px;
             overflow: hidden;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         &_text {
@@ -1904,12 +1926,11 @@ li {
     }
 
     &_products {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        gap: 30px;
 
         .product {
             border: 1px solid #DFDFDF;
+            margin-bottom: 50px;
+            display: block;
 
             &:hover {
                 border-color: transparent;
@@ -2065,6 +2086,12 @@ li {
                 border-top: 1px solid #DFDFDF;
                 margin-top: -1px;
                 line-height: 30px;
+                display: none;
+                min-height: 100px;
+
+                &.active {
+                    display: block;
+                }
 
                 ul {
                     margin-bottom: 0;
@@ -2092,6 +2119,10 @@ li {
             }
         }
     }
+
+    &_bottom {
+        padding-left: 240px;
+    }
 }
 
 .sidebar {
@@ -2100,7 +2131,7 @@ li {
     border: 1px solid #DFDFDF;
 
     &_item {
-        &.active {
+        &.active, &.fixed {
             .sidebar_item {
                 &_top {
 
@@ -2110,6 +2141,7 @@ li {
                 }
                 &_body {
                     max-height: 700px;
+                    min-height: 60px;
                 }
             }
         }
@@ -2134,7 +2166,8 @@ li {
         }
         &_body {
             max-height: 0;
-            transition: 0.5s ease;
+            min-height: 0;
+            transition: 0.3s ease;
             overflow: hidden;
         }
 
@@ -2362,6 +2395,8 @@ li {
         }
 
         &_item {
+            padding-bottom: 50px;
+
             img {
                 width: 100%;
             }

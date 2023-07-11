@@ -144,6 +144,77 @@ if (partnersSwiper) {
     });
 }
 
+// Initialize Swiper Partners
+const reviewPartnersSwiper = document.querySelector('.reviewPartnersSwiper')
+if (reviewPartnersSwiper) {
+    var swiper = new Swiper(".reviewPartnersSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 18,
+        initialSlide: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1200: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 4,
+            }
+        }
+    });
+}
+
+// Related Product swiper
+const relatedSwiper = document.querySelector('.relatedSwiper')
+if (relatedSwiper) {
+    var swiper = new Swiper(".relatedSwiper", {
+        slidesPerView: 4,
+        spaceBetween: 18,
+        initialSlide: 0,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            576: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1440: {
+                slidesPerView: 4,
+            }
+        }
+    });
+}
+
 
 // Initialize Swiper Reviews
 const reviewSwiper1 = document.querySelector('.reviewSwiper1')
@@ -225,10 +296,14 @@ const vacanciesList = document.querySelectorAll('.vacancies_item_top')
 if (vacanciesList) {
     vacanciesList.forEach(item => {
         item.addEventListener('click', (e) => {
-            vacanciesList.forEach(elem => {
-                elem.parentNode.classList.remove('active')
-            })
-            item.parentNode.classList.add('active')
+            if (item.parentNode.classList.contains('active')) {
+                item.parentNode.classList.remove('active')
+            } else {
+                vacanciesList.forEach(elem => {
+                    elem.parentNode.classList.remove('active')
+                })
+                item.parentNode.classList.add('active')
+            }
         })
     })
 }
@@ -254,10 +329,34 @@ const sidebarSubMenu = document.querySelectorAll('.sidebar_item_item_top')
 if (sidebarSubMenu) {
     sidebarSubMenu.forEach(item => {
         item.addEventListener('click', (e) => {
-            sidebarSubMenu.forEach(elem => {
-                elem.parentNode.classList.remove('active')
+            if (item.parentNode.classList.contains('active')) {
+                item.parentNode.classList.remove('active')
+            } else {
+                sidebarSubMenu.forEach(elem => {
+                    elem.parentNode.classList.remove('active')
+                })
+                item.parentNode.classList.add('active')
+            }
+        })
+    })
+}
+
+// product tab
+
+const productTabs = document.querySelectorAll('.categories_product_tab')
+const productTabsBody = document.querySelectorAll('.categories_product_tabs_body')
+
+if (productTabs) {
+    productTabs.forEach((item,index) => {
+        item.addEventListener('click', (e) => {
+            productTabs.forEach(elem => {
+                elem.classList.remove('active')
             })
-            item.parentNode.classList.add('active')
+            productTabsBody.forEach(elem => {
+                elem.classList.remove('active')
+            })
+            item.classList.add('active')
+            productTabsBody[index].classList.add('active')
         })
     })
 }

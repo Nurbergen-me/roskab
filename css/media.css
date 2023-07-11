@@ -249,6 +249,9 @@
   .categories .sidebar {
     display: none;
   }
+  .categories_bottom {
+    padding-left: 0;
+  }
   .partners_wrap {
     gap: 20px;
   }

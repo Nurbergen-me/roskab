@@ -336,6 +336,10 @@
         .sidebar {
             display: none;
         }
+
+        &_bottom {
+            padding-left: 0;
+        }
     }
     .partners {
         &_wrap {
