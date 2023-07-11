@@ -496,6 +496,11 @@
         .swiper-button-prev, .swiper-button-next {
             display: none;
         }
+        &_nav {
+            &_btn {
+                display: none;
+            }
+        }
         &_offer {
             padding: 30px 0 50px;
         }
