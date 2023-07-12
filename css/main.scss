@@ -2075,15 +2075,28 @@ li {
     }
 
     &_products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+        margin-top: 30px;
 
         .product {
             border: 1px solid #DFDFDF;
-            margin-bottom: 50px;
+            margin-bottom: 0;
             display: block;
 
             &:hover {
                 border-color: transparent;
             }
+        }
+    }
+
+    &_related_products {
+        margin-top: 30px;
+        .product {
+            border: 1px solid #DFDFDF;
+            margin-bottom: 50px;
+            display: block;
         }
     }
 

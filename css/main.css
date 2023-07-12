@@ -1721,13 +1721,27 @@ li {
   align-items: flex-start;
   gap: 30px;
 }
+.categories_products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
 .categories_products .product {
   border: 1px solid #DFDFDF;
-  margin-bottom: 50px;
+  margin-bottom: 0;
   display: block;
 }
 .categories_products .product:hover {
   border-color: transparent;
+}
+.categories_related_products {
+  margin-top: 30px;
+}
+.categories_related_products .product {
+  border: 1px solid #DFDFDF;
+  margin-bottom: 50px;
+  display: block;
 }
 .categories_btn {
   margin: 60px auto 0;
