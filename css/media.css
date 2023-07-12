@@ -127,6 +127,9 @@
   .nav_location, .nav_menu {
     display: none;
   }
+  .header {
+    padding-bottom: 60px;
+  }
   .header_swiper_content {
     padding-top: 100px;
     height: 100%;

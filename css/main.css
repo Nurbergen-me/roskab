@@ -454,6 +454,9 @@ li {
   z-index: 11;
   padding-bottom: 170px;
 }
+.header_wrap {
+  border-bottom: 1px solid #dfdfdf;
+}
 .header_nav {
   top: -100%;
   width: 100%;
@@ -474,6 +477,9 @@ li {
 }
 .header_nav.fixed .black-icon {
   display: block;
+}
+.header_nav.fixed .header_wrap {
+  border: none;
 }
 .header_nav.fixed .header_menu {
   border: none;
@@ -537,6 +543,9 @@ li {
 }
 .header-main {
   height: 700px;
+}
+.header-main .header_wrap {
+  border: none;
 }
 .header-main .header_menu {
   border: none;

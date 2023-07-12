@@ -515,6 +515,10 @@ li {
     z-index: 11;
     padding-bottom: 170px;
 
+    &_wrap {
+        border-bottom: 1px solid #dfdfdf;
+    }
+
     &_nav {
         top: -100%;
         width: 100%;
@@ -538,6 +542,9 @@ li {
             }
 
             .header {
+                &_wrap {
+                    border: none;
+                }
                 &_menu {
                     border: none;
                     &_item {
@@ -624,6 +631,10 @@ li {
         height: 700px;
 
         .header {
+
+            &_wrap {
+                border: none;
+            }
             &_menu {
                 border: none;
                 &_item {
