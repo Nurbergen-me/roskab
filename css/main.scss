@@ -523,7 +523,7 @@ li {
         top: -100%;
         width: 100%;
         transition: 1s ease;
-        max-height: 0;
+        max-height: 70px;
 
         &.fixed {
             top: 0;

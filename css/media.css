@@ -72,6 +72,9 @@
   .products_wrap {
     grid-template-columns: repeat(3, 1fr);
   }
+  .partners-page .partners_wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .locations_info_number {
     font-size: 30px;
     padding-bottom: 14px;
@@ -129,6 +132,9 @@
   }
   .header {
     padding-bottom: 60px;
+  }
+  .header_nav {
+    background: #fff;
   }
   .header_swiper_content {
     padding-top: 100px;
@@ -199,6 +205,9 @@
     margin-bottom: 20px;
   }
   .products_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .partners-page .partners_wrap {
     grid-template-columns: repeat(2, 1fr);
   }
   .partners_wrap {
@@ -559,6 +568,9 @@
   .partners_wrap {
     grid-template-columns: 1fr;
     gap: 8px;
+  }
+  .partners-page .partners_wrap {
+    grid-template-columns: 1fr;
   }
   .certificates_top, .certificates_body {
     grid-template-columns: 1fr;
