@@ -31,6 +31,9 @@
   .news_wrap {
     grid-template-columns: repeat(3, 1fr);
   }
+  .catalog_wrap {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .products_wrap {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -199,6 +202,9 @@
     grid-template-columns: repeat(3, 1fr);
   }
   .news_wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .catalog_wrap {
     grid-template-columns: repeat(2, 1fr);
   }
   .locations_info {
@@ -462,6 +468,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .news_wrap {
+    grid-template-columns: 1fr;
+  }
+  .catalog_wrap {
     grid-template-columns: 1fr;
   }
   .questions {

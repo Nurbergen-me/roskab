@@ -46,6 +46,11 @@
             grid-template-columns: repeat(3, 1fr);
         }
     }
+    .catalog {
+        &_wrap {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
     .products {
         &_wrap {
             grid-template-columns: repeat(4, 1fr);
@@ -269,6 +274,11 @@
         }
     }
     .news {
+        &_wrap {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .catalog {
         &_wrap {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -606,6 +616,11 @@
         }
     }
     .news {
+        &_wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+    .catalog {
         &_wrap {
             grid-template-columns: 1fr;
         }
