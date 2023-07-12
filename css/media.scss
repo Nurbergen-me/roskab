@@ -192,9 +192,6 @@
         &_logo {
             width: 120px;
         }
-        &_top {
-            padding: 16px 0;
-        }
         &_title {
             margin-bottom: 46px;
         }
@@ -205,6 +202,34 @@
             width: 200px;
             height: 46px;
             font-size: 14px;
+        }
+        &_nav_btn {
+            display: none;
+        }
+        &_top {
+            padding: 0;
+            &_mobile {
+                display: flex;
+
+                &_item {
+                    background: #fff;
+                    width: 54px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &:first-child {
+                        border-right: 1px solid #E5E5E5;
+                    }
+                }
+            }
+        }
+        &_search {
+            height: 40px;
+        }
+        &_phones, &_search {
+            display: none;
         }
         // &_nav {
         //     background: #fff;
@@ -337,8 +362,20 @@
         }
     }
     .categories {
+
+        &_wrap {
+            flex-direction: column;
+        }
         .sidebar {
-            display: none;
+        }
+        .sidebar {
+            width: 100%;
+            &_top {
+                display: flex;
+            }
+            &_wrap {
+                display: none;
+            }
         }
 
         &_bottom {
@@ -379,12 +416,6 @@
         }
         &_top {
             padding: 10px 0;
-        }
-        &_phone {
-            font-size: 12px;
-        }
-        &_search {
-            height: 40px;
         }
     }
     .pros {
@@ -511,9 +542,6 @@
         &_title {
             margin-bottom: 20px;
         }
-        &_phones, &_search {
-            display: none;
-        }
         &_nav {
             background: #fff;
 
@@ -522,24 +550,7 @@
             }
         }
         &_top {
-            padding: 0;
             padding-left: 5%;
-            &_mobile {
-                display: flex;
-
-                &_item {
-                    background: #fff;
-                    width: 54px;
-                    height: 60px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    &:first-child {
-                        border-right: 1px solid #E5E5E5;
-                    }
-                }
-            }
         }
     }
     .pros {

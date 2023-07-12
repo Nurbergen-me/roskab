@@ -57,6 +57,18 @@ if (headerNavBtn) {
 }
 
 
+// Sidebar toggle 
+
+const sidebarTop = document.querySelector('.sidebar_top')
+
+if (sidebarTop) {
+    sidebarTop.addEventListener('click',() => {
+        sidebarTop.parentNode.classList.toggle('active')
+    })
+}
+
+
+
 // Footer catalog toggle
 
 const footerCatalogName = document.querySelector('.footer_catalog_mobile_name')

@@ -313,6 +313,8 @@ li {
   overflow: auto;
   max-height: 100%;
   height: 100vh;
+  margin-left: auto;
+  max-width: 500px;
 }
 .hidden_top {
   display: flex;
@@ -1888,6 +1890,16 @@ li {
 .sidebar {
   width: 210px;
   min-width: 210px;
+}
+.sidebar.active .sidebar_wrap {
+  display: block !important;
+}
+.sidebar_top {
+  margin-bottom: 10px;
+  width: 100%;
+  display: none;
+}
+.sidebar_wrap {
   border: 1px solid #DFDFDF;
 }
 .sidebar_item.active .sidebar_item_top img, .sidebar_item.fixed .sidebar_item_top img {

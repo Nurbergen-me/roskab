@@ -137,9 +137,6 @@
   .header_logo {
     width: 120px;
   }
-  .header_top {
-    padding: 16px 0;
-  }
   .header_title {
     margin-bottom: 46px;
   }
@@ -150,6 +147,32 @@
     width: 200px;
     height: 46px;
     font-size: 14px;
+  }
+  .header_nav_btn {
+    display: none;
+  }
+  .header_top {
+    padding: 0;
+  }
+  .header_top_mobile {
+    display: flex;
+  }
+  .header_top_mobile_item {
+    background: #fff;
+    width: 54px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header_top_mobile_item:first-child {
+    border-right: 1px solid #E5E5E5;
+  }
+  .header_search {
+    height: 40px;
+  }
+  .header_phones, .header_search {
+    display: none;
   }
   .pros_item {
     width: 48%;
@@ -249,7 +272,16 @@
     min-width: auto;
     max-width: 100%;
   }
+  .categories_wrap {
+    flex-direction: column;
+  }
   .categories .sidebar {
+    width: 100%;
+  }
+  .categories .sidebar_top {
+    display: flex;
+  }
+  .categories .sidebar_wrap {
     display: none;
   }
   .categories_bottom {
@@ -281,12 +313,6 @@
   }
   .header_top {
     padding: 10px 0;
-  }
-  .header_phone {
-    font-size: 12px;
-  }
-  .header_search {
-    height: 40px;
   }
   .pros_item_name {
     margin-bottom: 16px;
@@ -383,9 +409,6 @@
   .header_title {
     margin-bottom: 20px;
   }
-  .header_phones, .header_search {
-    display: none;
-  }
   .header_nav {
     background: #fff;
   }
@@ -393,22 +416,7 @@
     width: 100%;
   }
   .header_top {
-    padding: 0;
     padding-left: 5%;
-  }
-  .header_top_mobile {
-    display: flex;
-  }
-  .header_top_mobile_item {
-    background: #fff;
-    width: 54px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .header_top_mobile_item:first-child {
-    border-right: 1px solid #E5E5E5;
   }
   .pros {
     padding: 50px 0 40px;

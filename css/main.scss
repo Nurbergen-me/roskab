@@ -346,6 +346,8 @@ li {
         overflow: auto;
         max-height: 100%;
         height: 100vh;
+        margin-left: auto;
+        max-width: 500px;
     }
 
     &_top {
@@ -2275,7 +2277,22 @@ li {
 .sidebar {
     width: 210px;
     min-width: 210px;
-    border: 1px solid #DFDFDF;
+
+    &.active {
+        .sidebar_wrap {
+            display: block !important;
+        }
+    }
+
+    &_top {
+        margin-bottom: 10px;
+        width: 100%;
+        display: none;
+    }
+
+    &_wrap {
+        border: 1px solid #DFDFDF;
+    }
 
     &_item {
         &.active, &.fixed {
