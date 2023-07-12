@@ -221,6 +221,9 @@ h2 {
   width: 22px;
 }
 
+.swiper-slide {
+  outline: none;
+}
 .swiper-slide img {
   max-width: 100%;
 }
