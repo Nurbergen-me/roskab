@@ -494,6 +494,7 @@ li {
             transition: 0.5s ease;
             display: block;
             padding: 0 15px;
+            white-space: nowrap;
 
             &:hover {
                 background: #1e6fb9;
@@ -1456,6 +1457,12 @@ li {
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+
+    &_catalog {
+        &_mobile_name {
+            display: none;
         }
     }
 

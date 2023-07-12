@@ -57,6 +57,18 @@ if (headerNavBtn) {
 }
 
 
+// Footer catalog toggle
+
+const footerCatalogName = document.querySelector('.footer_catalog_mobile_name')
+
+if (footerCatalogName) {
+    footerCatalogName.addEventListener('click',() => {
+        footerCatalogName.parentNode.classList.toggle('active')
+    })
+}
+
+
+
 
 // Initialize Swiper 
 const mySwiper = document.querySelector('.mySwiper')
@@ -401,3 +413,7 @@ if (productTabs) {
         })
     })
 }
+
+Fancybox.bind("[data-fancybox]", {
+    // Your custom options
+  });

@@ -282,6 +282,10 @@
         &_col {
             width: 49%;
 
+            &_menu {
+                 order: 2
+            }
+
             &_contacts {
                 order: 2
             }
@@ -611,13 +615,23 @@
             text-align: center;
         }
         &_wrap {
-            gap: 25px;
+            gap: 0;
         }
         &_text {
             max-width: initial;
         }
+        &_catalog {
+            &_name {
+                display: none !important;
+            }
+
+            &_moblie_name {
+                display: block;
+            }
+        }
         &_col {
             width: 100%;
+            margin-bottom: 25px;
 
             &_first {
                 grid-template-columns: 1fr;
@@ -625,7 +639,30 @@
             }
 
             &_catalog {
-                display: none;
+                order: 1;
+                border-bottom: 1px solid #375979;
+                padding-bottom: 4px;
+                margin-bottom: 0;
+
+                &.active {
+                    .footer_catalog {
+                        max-height: 500px;
+                    }
+                }
+
+                .footer_name {
+                    line-height: 40px;
+                    margin-bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+
+                .footer_catalog {
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: 0.5s ease;
+                }
             }
             &_address {
                 order: 2;

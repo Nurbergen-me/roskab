@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <div class="hidden-nav"></div>
     <div class="hidden">
         <div class="hidden_wrap">
             <div class="hidden_top">
@@ -1626,10 +1626,13 @@
                     </ul>
                 </div>
                 <div class="footer_col footer_col_catalog">
-                    <a href="catalog.html" class="footer_name">
+                    <a href="catalog.html" class="footer_name footer_catalog_name">
                         Каталог
                     </a>
-                    <div class="footer_catalog">
+                    <div class="footer_name footer_catalog_mobile_name">
+                        Каталог <img src="img/arrow-down-icon.svg" alt="">
+                    </div>
+                    <div class="footer_catalog footer_catalog_menu">
                         <a href="#" class="footer_item">
                             Кабели силовые с ПВХ изоляцией  
                         </a>
@@ -1742,6 +1745,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

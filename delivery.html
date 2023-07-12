@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -26,6 +27,38 @@
                 </div>
             </div>
             <ul class="hidden_menu">
+                <li>
+                    <div class="hidden_menu_item hidden_menu_catalog">
+                        <div class="hidden_menu_catalog_top">
+                            Каталог 
+                            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.353554 1.35254L1.06057 0.645615L5.06063 4.64537L4.3535 5.3527L0.353554 1.35254Z" fill="#FBFBFB"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.35345 1.35254L7.64644 0.645618L3.64639 4.64537L4.35352 5.35271L8.35345 1.35254Z" fill="#FBFBFB"/>
+                            </svg>
+                        </div>
+                        <div class="hidden_menu_catalog_body">
+                            <div class="hidden_menu_catalog_item">
+                                Кабели силовые с ПВХ изоляцией и название в три строки
+                            </div>
+                            <div class="hidden_menu_catalog_item">
+                                Кабели силовые с ПВХ изоляцией и название в три строки
+                            </div>
+                            <div class="hidden_menu_catalog_item">
+                                Кабели силовые с ПВХ изоляцией и название в три строки
+                            </div>
+                            <div class="hidden_menu_catalog_item">
+                                Кабели силовые с ПВХ изоляцией и название в три строки
+                            </div>
+                            <div class="hidden_menu_catalog_item">
+                                Кабели силовые с ПВХ изоляцией и название в три строки
+                            </div>
+                            <div class="hidden_menu_catalog_item">
+                                Кабели силовые с ПВХ изоляцией и название в три строки
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
                 <li>
                     <a href="" class="hidden_menu_item">
                         Компания
@@ -157,7 +190,8 @@
                             </button>
                         </div>
                         <div class="header_mail">
-                            <img src="img/mail-black-icon.png" alt="mail">
+                            <img class="white-icon" src="img/mail-icon.png" alt="mail">
+                            <img class="black-icon" src="img/mail-black-icon.png" alt="mail">
                             <div class="header_mail_info">
                                 direct@roskab.ru
                                 <span>
@@ -167,24 +201,35 @@
                         </div>
                         <div class="header_phones">
                             <a href="#" class="header_phone">
-                                <img src="img/phone-black-icon.png" alt="phone">
+                                <img class="white-icon" src="img/phone-icon.png" alt="phone">
+                                <img class="black-icon" src="img/phone-black-icon.png" alt="phone">
                                 +7 846 264-14-41
                             </a>
                             <a href="#" class="header_phone">
-                                <img src="img/phone-black-icon.png" alt="phone">
+                                <img class="white-icon" src="img/phone-icon.png" alt="phone">
+                                <img class="black-icon" src="img/phone-black-icon.png" alt="phone">
                                 +7 846 264-13-31
                             </a>
                         </div>
                         <div class="header_top_btn btn">
                             ЗАКАЗАТЬ ЗВОНОК
                         </div>
+                        <div class="btn header_nav_btn d-none">
+                            ПРОДУКЦИЯ
+                            <div class="burger header_nav_burger">
+                                <div class="burger_item"></div>
+                                <div class="burger_item"></div>
+                                <div class="burger_item"></div>
+                            </div>
+                            <img src="img/close-icon.svg" alt="close" class="header_nav_burger_close d-none" id="burger_close">
+                        </div>
                         <div class="header_top_mobile">
                             <div class="header_top_mobile_item">
                                 <img src="img/search-blue-icon.png" alt="search">
                             </div>
-                            <div class="header_top_mobile_item">
+                            <a href="tel:+78462641441" class="header_top_mobile_item">
                                 <img src="img/phone-blue-icon.png" alt="search">
-                            </div>
+                            </a>
                             <div class="header_top_mobile_burger burger">
                                 <div class="burger_item"></div>
                                 <div class="burger_item"></div>
@@ -200,7 +245,6 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.35345 1.35254L7.64644 0.645618L3.64639 4.64537L4.35352 5.35271L8.35345 1.35254Z" fill="#FBFBFB"/>
                             </svg>
                         </a>
-                        <span class="header_menu_line"></span>
                         <a href="#" class="header_menu_item">
                             Кабели контрольные  
                             <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,11 +252,9 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.35345 1.35254L7.64644 0.645618L3.64639 4.64537L4.35352 5.35271L8.35345 1.35254Z" fill="#FBFBFB"/>
                             </svg>
                         </a>
-                        <span class="header_menu_line"></span>
                         <a href="#" class="header_menu_item">
                             Кабели и провода силовые гибкие до 1 кВ
                         </a>
-                        <span class="header_menu_line"></span>
                         <a href="#" class="header_menu_item">
                             Кабель В наличии
                             <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -220,13 +262,65 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.35345 1.35254L7.64644 0.645618L3.64639 4.64537L4.35352 5.35271L8.35345 1.35254Z" fill="#FBFBFB"/>
                             </svg>
                         </a>
-                        <span class="header_menu_line"></span>
                         <a href="#" class="header_menu_item">
                             Кабель В наличии
                         </a>
-                        <span class="header_menu_line"></span>
                         <a href="#" class="header_menu_item">
                             Ещё...
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_nav_menu d-none">
+                <div class="container">
+                    <div class="header_nav_menu_wrap">
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
+                        </a>
+                        <a href="#" class="header_nav_menu_item">
+                            Кабели силовые с изоляцией из СПЭ 
+                            на напряжение 10 кВ
                         </a>
                     </div>
                 </div>
@@ -462,9 +556,9 @@
                     </p>
                 </div>
                 <div class="questions_form">
-                    <div class="questions_input">
+                    <div class="questions_input with-select">
                         <div class="questions_input_icon">
-
+                            <img src="img/person-icon.png" alt="">
                         </div>
                         <select>
                             <option value="1">1</option>
@@ -473,19 +567,19 @@
                     </div>
                     <div class="questions_input">
                         <div class="questions_input_icon">
-
+                            <img src="img/person-icon.png" alt="">
                         </div>
                         <input type="text" placeholder="Ваше имя *">
                     </div>
                     <div class="questions_input">
                         <div class="questions_input_icon">
-
+                            <img src="img/phone-icon.png" alt="">
                         </div>
                         <input type="text" placeholder="+7">
                     </div>
                     <div class="questions_input">
                         <div class="questions_input_icon">
-
+                            <img src="img/mail-icon.png" alt="">
                         </div>
                         <input type="text" placeholder="Ваш E-mail">
                     </div>
@@ -557,10 +651,13 @@
                     </ul>
                 </div>
                 <div class="footer_col footer_col_catalog">
-                    <a href="catalog.html" class="footer_name">
+                    <a href="catalog.html" class="footer_name footer_catalog_name">
                         Каталог
                     </a>
-                    <div class="footer_catalog">
+                    <div class="footer_name footer_catalog_mobile_name">
+                        Каталог <img src="img/arrow-down-icon.svg" alt="">
+                    </div>
+                    <div class="footer_catalog footer_catalog_menu">
                         <a href="#" class="footer_item">
                             Кабели силовые с ПВХ изоляцией  
                         </a>
@@ -673,6 +770,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

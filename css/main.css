@@ -437,6 +437,7 @@ li {
   transition: 0.5s ease;
   display: block;
   padding: 0 15px;
+  white-space: nowrap;
 }
 .nav_menu_item:hover {
   background: #1e6fb9;
@@ -1202,6 +1203,9 @@ li {
 }
 .footer_wrap a:hover {
   text-decoration: underline;
+}
+.footer_catalog_mobile_name {
+  display: none;
 }
 .footer_logo {
   height: 68px;
