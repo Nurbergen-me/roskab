@@ -460,8 +460,7 @@ li {
 .header_nav {
   top: -100%;
   width: 100%;
-  transition: 1s ease;
-  max-height: 70px;
+  max-height: 0px;
 }
 .header_nav.fixed {
   top: 0;
@@ -469,8 +468,8 @@ li {
   background: #fff;
   z-index: 20;
   border-bottom: 1px solid #dfdfdf;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
+  max-height: 170px;
+  transition: 1s ease;
 }
 .header_nav.fixed .white-icon {
   display: none;
