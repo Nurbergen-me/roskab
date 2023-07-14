@@ -76,9 +76,13 @@
             }
             &_info {
                 width: 55%;
+                order: 1;
             }
             &_img {
                 width: 40%;
+            }
+            &_more {
+                order: 2
             }
         }
     }

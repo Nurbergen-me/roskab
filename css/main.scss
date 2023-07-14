@@ -292,11 +292,16 @@ li {
 }
 
 .top-banner {
-    background: #1e6fb9;
+    // background: #1e6fb9;
     border-radius: 4px;
-    height: 90px;
+    // height: 90px;
     width: 100%;
     margin-bottom: 50px;
+
+    img {
+        height: auto;
+        width: 100%;
+    }
 }
 
 .container {
@@ -1350,6 +1355,27 @@ li {
 
 // ------------- Questions --------------------
 
+.with-select {
+    position: relative;
+
+    select {
+        &::-ms-expand {
+            display: none;
+        }
+    }
+    
+    &:after {
+        content: '';
+        background: #fff url('../img/arrow-down-black-icon.svg') no-repeat left / contain;
+        width: 27px;
+        height: 6px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .questions {
     padding: 70px 0;
     &_wrap {
@@ -1391,26 +1417,6 @@ li {
         margin-bottom: 25px;
         border-radius: 4px;
         overflow: hidden;
-
-        &.with-select {
-
-            select {
-                &::-ms-expand {
-                    display: none;
-                }
-            }
-            
-            &:after {
-                content: '';
-                background: #fff url('../img/arrow-down-black-icon.svg') no-repeat left / contain;
-                width: 27px;
-                height: 6px;
-                position: absolute;
-                right: 0;
-                top: 50%;
-                transform: translateY(-50%);
-            }
-        }
 
         &_icon {
             background: #1e81d9;
@@ -2421,6 +2427,7 @@ li {
 }
 
 .partners-page {
+    padding-top: 0;
     .partners {
         &_wrap {
             display: grid;
@@ -2726,6 +2733,13 @@ li {
         border-bottom: 1px solid #dfdfdf;
         position: relative;
         padding: 36px 0 30px;
+
+        .with-select {
+            &:after {
+                background-color: #f5f5f5;
+                border-right: 1px solid #dfdfdf;
+            }
+        }
     }
 
     &_input {

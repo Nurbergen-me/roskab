@@ -53,9 +53,13 @@
   }
   .categories_product_info {
     width: 55%;
+    order: 1;
   }
   .categories_product_img {
     width: 40%;
+  }
+  .categories_product_more {
+    order: 2;
   }
 }
 @media screen and (max-width: 1200px) {
