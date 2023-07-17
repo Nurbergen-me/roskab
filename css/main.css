@@ -506,9 +506,6 @@ li {
 .header_nav.fixed .header_menu {
   display: none;
 }
-.header_nav .black-icon {
-  display: none;
-}
 .header_nav_menu {
   background: #f5f5f5;
   max-height: 0;
@@ -542,11 +539,20 @@ li {
   background: transparent;
   padding: 0;
 }
+.header_mail .white-icon {
+  display: none;
+}
+.header_phone .white-icon {
+  display: none;
+}
 .header-main {
   height: 700px;
 }
 .header-main .header_wrap {
   border: none;
+}
+.header-main .header_nav .black-icon {
+  display: none;
 }
 .header-main .header_menu {
   border: none;
@@ -557,6 +563,12 @@ li {
 .header-main .header_search input {
   background: #fff;
 }
+.header-main .header_mail .black-icon {
+  display: none;
+}
+.header-main .header_mail .white-icon {
+  display: block;
+}
 .header-main .header_mail_info {
   color: #fff;
 }
@@ -565,6 +577,9 @@ li {
 }
 .header-main .header_phone {
   color: #fff;
+}
+.header-main .header_phone .white-icon {
+  display: block;
 }
 .header .swiper {
   position: absolute;
@@ -1131,8 +1146,9 @@ li {
 .with-select:after {
   content: "";
   background: #fff url("../img/arrow-down-black-icon.svg") no-repeat left/contain;
+  background-size: 10px;
   width: 27px;
-  height: 6px;
+  height: 60%;
   position: absolute;
   right: 0;
   top: 50%;
@@ -1533,7 +1549,7 @@ li {
 .statistics_content_item {
   margin-bottom: 1px;
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 264px 1fr;
   width: 100%;
 }
 .statistics_content_left {

@@ -587,10 +587,6 @@ li {
             }
         }
 
-        .black-icon {
-            display: none;
-        }
-
         &_menu {
             background: #f5f5f5;
             max-height: 0;
@@ -632,6 +628,17 @@ li {
         }
     }
 
+    &_mail {
+        .white-icon {
+            display: none;
+        }
+    }
+    &_phone {
+        .white-icon {
+            display: none;
+        }
+    }
+
     &-main {
         height: 700px;
 
@@ -639,6 +646,11 @@ li {
 
             &_wrap {
                 border: none;
+            }
+            &_nav {
+                .black-icon {
+                    display: none;
+                }
             }
             &_menu {
                 border: none;
@@ -652,6 +664,12 @@ li {
                 }
             }
             &_mail {
+                .black-icon {
+                    display: none;
+                }
+                .white-icon {
+                    display: block;
+                }
 
                 &_info {
                     color: #fff;
@@ -663,6 +681,9 @@ li {
             }
 
             &_phone {
+                .white-icon {
+                    display: block;
+                }
                 color: #fff;
             }
         }
@@ -1367,8 +1388,9 @@ li {
     &:after {
         content: '';
         background: #fff url('../img/arrow-down-black-icon.svg') no-repeat left / contain;
+        background-size: 10px;
         width: 27px;
-        height: 6px;
+        height: 60%;
         position: absolute;
         right: 0;
         top: 50%;
@@ -1854,7 +1876,7 @@ li {
         &_item {
             margin-bottom: 1px;
             display: grid;
-            grid-template-columns: 300px 1fr;
+            grid-template-columns: 264px 1fr;
             width: 100%;
         }
         &_left {
