@@ -539,11 +539,11 @@ li {
             transition: 1s ease;
 
             .white-icon {
-                display: none;
+                display: none !important;
             }
 
             .black-icon {
-                display: block;
+                display: block !important;
             }
 
             .header {

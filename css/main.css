@@ -474,10 +474,10 @@ li {
   transition: 1s ease;
 }
 .header_nav.fixed .white-icon {
-  display: none;
+  display: none !important;
 }
 .header_nav.fixed .black-icon {
-  display: block;
+  display: block !important;
 }
 .header_nav.fixed .header_wrap {
   border: none;
